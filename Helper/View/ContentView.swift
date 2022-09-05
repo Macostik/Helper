@@ -30,13 +30,12 @@ struct ContentView: View {
                     Image.bg
                         .resizable()
                         .aspectRatio(contentMode: .fill)
-                        .frame(width: screen.width,height: screen.height)
+                        .frame(width: screen.width, height: screen.height)
                     .scaleEffect(scale >= 0.88 ? scale : 0.88, anchor: .center)
                     .offset(x: -offset)
                     .blur(radius: (1 - scale) * 20)
                     .tag(1)
                 }
-                
                 Color.pink
                     .tag(2)
             }
