@@ -27,8 +27,7 @@ struct ContentView: View {
                     let screen = reader.frame(in: .global)
                     let offset = screen.minX
                     let scale = 1 + (offset / screen.width)
-                    
-                    Image("bg1")
+                    Image.bg
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .frame(width: screen.width,height: screen.height)

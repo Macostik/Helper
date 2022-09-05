@@ -1,0 +1,10 @@
+/* 
+  Base.strings
+  Helper
+
+  Created by Macostik on 05.09.2022.
+  
+*/
+"testString" = "test string";
+"one" = "one";
+"two" = "two";

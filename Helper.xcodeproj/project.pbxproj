@@ -9,11 +9,25 @@
 /* Begin PBXBuildFile section */
 		56B2781A28C61AAB00018EEF /* HelperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B2781928C61AAB00018EEF /* HelperApp.swift */; };
 		56B2781C28C61AAB00018EEF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B2781B28C61AAB00018EEF /* ContentView.swift */; };
-		56B2781E28C61AAC00018EEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56B2781D28C61AAC00018EEF /* Assets.xcassets */; };
 		56B2782128C61AAC00018EEF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56B2782028C61AAC00018EEF /* Preview Assets.xcassets */; };
 		56B2782B28C61AAC00018EEF /* HelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B2782A28C61AAC00018EEF /* HelperTests.swift */; };
 		56B2783528C61AAC00018EEF /* HelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B2783428C61AAC00018EEF /* HelperUITests.swift */; };
 		56B2783728C61AAC00018EEF /* HelperUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B2783628C61AAC00018EEF /* HelperUITestsLaunchTests.swift */; };
+		56B2788028C649B500018EEF /* swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 56B2787F28C649B500018EEF /* swiftlint.yml */; };
+		56B2788928C64B1200018EEF /* swiftui-xcassets-template.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 56B2788728C64B1200018EEF /* swiftui-xcassets-template.stencil */; };
+		56B2788A28C64B1200018EEF /* fonts_swift5_swiftui.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 56B2788828C64B1200018EEF /* fonts_swift5_swiftui.stencil */; };
+		56B278BA28C6586100018EEF /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 56B278B928C6586100018EEF /* swiftgen.yml */; };
+		56B278BF28C6599900018EEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56B278BE28C6599900018EEF /* Assets.xcassets */; };
+		56B278C128C65AB600018EEF /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56B278C028C65AB600018EEF /* Colors.xcassets */; };
+		56B278C328C65BE500018EEF /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B278C228C65BE500018EEF /* XCAssets+Generated.swift */; };
+		56B278D228C65CF500018EEF /* Base.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56B278D028C65CF500018EEF /* Base.strings */; };
+		56B278DD28C6728F00018EEF /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56B278D828C6728F00018EEF /* Poppins-Medium.ttf */; };
+		56B278DE28C6728F00018EEF /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56B278D928C6728F00018EEF /* Poppins-Bold.ttf */; };
+		56B278DF28C6728F00018EEF /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56B278DA28C6728F00018EEF /* Poppins-Italic.ttf */; };
+		56B278E028C6728F00018EEF /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56B278DB28C6728F00018EEF /* Poppins-Regular.ttf */; };
+		56B278E128C6728F00018EEF /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56B278DC28C6728F00018EEF /* Poppins-SemiBold.ttf */; };
+		56B278E428C6733400018EEF /* Fonts+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B278E228C6733400018EEF /* Fonts+Generated.swift */; };
+		56B278E528C6733400018EEF /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B278E328C6733400018EEF /* Strings+Generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +51,28 @@
 		56B2781628C61AAB00018EEF /* Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Helper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56B2781928C61AAB00018EEF /* HelperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperApp.swift; sourceTree = "<group>"; };
 		56B2781B28C61AAB00018EEF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		56B2781D28C61AAC00018EEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56B2782028C61AAC00018EEF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		56B2782628C61AAC00018EEF /* HelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56B2782A28C61AAC00018EEF /* HelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperTests.swift; sourceTree = "<group>"; };
 		56B2783028C61AAC00018EEF /* HelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56B2783428C61AAC00018EEF /* HelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperUITests.swift; sourceTree = "<group>"; };
 		56B2783628C61AAC00018EEF /* HelperUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		56B2787F28C649B500018EEF /* swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftlint.yml; sourceTree = "<group>"; };
+		56B2788728C64B1200018EEF /* swiftui-xcassets-template.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "swiftui-xcassets-template.stencil"; sourceTree = "<group>"; };
+		56B2788828C64B1200018EEF /* fonts_swift5_swiftui.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fonts_swift5_swiftui.stencil; sourceTree = "<group>"; };
+		56B2789D28C64D8000018EEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56B278B928C6586100018EEF /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		56B278BE28C6599900018EEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		56B278C028C65AB600018EEF /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		56B278C228C65BE500018EEF /* XCAssets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
+		56B278D128C65CF500018EEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Base.strings; sourceTree = "<group>"; };
+		56B278D828C6728F00018EEF /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		56B278D928C6728F00018EEF /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		56B278DA28C6728F00018EEF /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		56B278DB28C6728F00018EEF /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		56B278DC28C6728F00018EEF /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		56B278E228C6733400018EEF /* Fonts+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fonts+Generated.swift"; sourceTree = "<group>"; };
+		56B278E328C6733400018EEF /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +103,12 @@
 		56B2780D28C61AAB00018EEF = {
 			isa = PBXGroup;
 			children = (
+				56B2787F28C649B500018EEF /* swiftlint.yml */,
+				56B278B928C6586100018EEF /* swiftgen.yml */,
 				56B2781828C61AAB00018EEF /* Helper */,
+				56B278BB28C6595800018EEF /* Resources */,
+				56B278B028C6558000018EEF /* Generated */,
+				56B2788628C64AF400018EEF /* Templates */,
 				56B2782928C61AAC00018EEF /* HelperTests */,
 				56B2783328C61AAC00018EEF /* HelperUITests */,
 				56B2781728C61AAB00018EEF /* Products */,
@@ -95,8 +129,8 @@
 			isa = PBXGroup;
 			children = (
 				56B2781928C61AAB00018EEF /* HelperApp.swift */,
-				56B2781B28C61AAB00018EEF /* ContentView.swift */,
-				56B2781D28C61AAC00018EEF /* Assets.xcassets */,
+				56B2787C28C6494E00018EEF /* Camera */,
+				56B2787B28C6493A00018EEF /* View */,
 				56B2781F28C61AAC00018EEF /* Preview Content */,
 			);
 			path = Helper;
@@ -127,6 +161,64 @@
 			path = HelperUITests;
 			sourceTree = "<group>";
 		};
+		56B2787B28C6493A00018EEF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				56B2781B28C61AAB00018EEF /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		56B2787C28C6494E00018EEF /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		56B2788628C64AF400018EEF /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				56B2788828C64B1200018EEF /* fonts_swift5_swiftui.stencil */,
+				56B2788728C64B1200018EEF /* swiftui-xcassets-template.stencil */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		56B278B028C6558000018EEF /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				56B278C228C65BE500018EEF /* XCAssets+Generated.swift */,
+				56B278E228C6733400018EEF /* Fonts+Generated.swift */,
+				56B278E328C6733400018EEF /* Strings+Generated.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		56B278BB28C6595800018EEF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				56B2789D28C64D8000018EEF /* Info.plist */,
+				56B278D728C6727300018EEF /* Poppins */,
+				56B278BE28C6599900018EEF /* Assets.xcassets */,
+				56B278C028C65AB600018EEF /* Colors.xcassets */,
+				56B278D028C65CF500018EEF /* Base.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		56B278D728C6727300018EEF /* Poppins */ = {
+			isa = PBXGroup;
+			children = (
+				56B278D928C6728F00018EEF /* Poppins-Bold.ttf */,
+				56B278DA28C6728F00018EEF /* Poppins-Italic.ttf */,
+				56B278D828C6728F00018EEF /* Poppins-Medium.ttf */,
+				56B278DB28C6728F00018EEF /* Poppins-Regular.ttf */,
+				56B278DC28C6728F00018EEF /* Poppins-SemiBold.ttf */,
+			);
+			path = Poppins;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +229,7 @@
 				56B2781228C61AAB00018EEF /* Sources */,
 				56B2781328C61AAB00018EEF /* Frameworks */,
 				56B2781428C61AAB00018EEF /* Resources */,
+				56B2788B28C64B7800018EEF /* SwiftGen */,
 			);
 			buildRules = (
 			);
@@ -232,7 +325,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				56B2782128C61AAC00018EEF /* Preview Assets.xcassets in Resources */,
-				56B2781E28C61AAC00018EEF /* Assets.xcassets in Resources */,
+				56B2788028C649B500018EEF /* swiftlint.yml in Resources */,
+				56B2788928C64B1200018EEF /* swiftui-xcassets-template.stencil in Resources */,
+				56B278E028C6728F00018EEF /* Poppins-Regular.ttf in Resources */,
+				56B278E128C6728F00018EEF /* Poppins-SemiBold.ttf in Resources */,
+				56B2788A28C64B1200018EEF /* fonts_swift5_swiftui.stencil in Resources */,
+				56B278BF28C6599900018EEF /* Assets.xcassets in Resources */,
+				56B278BA28C6586100018EEF /* swiftgen.yml in Resources */,
+				56B278DD28C6728F00018EEF /* Poppins-Medium.ttf in Resources */,
+				56B278DF28C6728F00018EEF /* Poppins-Italic.ttf in Resources */,
+				56B278DE28C6728F00018EEF /* Poppins-Bold.ttf in Resources */,
+				56B278C128C65AB600018EEF /* Colors.xcassets in Resources */,
+				56B278D228C65CF500018EEF /* Base.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,11 +356,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		56B2788B28C64B7800018EEF /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftgen >/dev/null; then\n  swiftgen\nelse\n  echo \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		56B2781228C61AAB00018EEF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56B278E528C6733400018EEF /* Strings+Generated.swift in Sources */,
+				56B278E428C6733400018EEF /* Fonts+Generated.swift in Sources */,
+				56B278C328C65BE500018EEF /* XCAssets+Generated.swift in Sources */,
 				56B2781C28C61AAB00018EEF /* ContentView.swift in Sources */,
 				56B2781A28C61AAB00018EEF /* HelperApp.swift in Sources */,
 			);
@@ -293,6 +421,17 @@
 			targetProxy = 56B2783128C61AAC00018EEF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		56B278D028C65CF500018EEF /* Base.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56B278D128C65CF500018EEF /* Base */,
+			);
+			name = Base.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		56B2783828C61AAC00018EEF /* Debug */ = {
@@ -420,6 +559,7 @@
 				DEVELOPMENT_TEAM = 224SJKKLQ3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -450,6 +590,7 @@
 				DEVELOPMENT_TEAM = 224SJKKLQ3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
