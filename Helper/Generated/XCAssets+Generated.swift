@@ -12,8 +12,6 @@ internal extension Color {
 
 internal extension Image {
   // Assets.xcassets
-  static var bg : Image { Image("bg", bundle: BundleToken.bundle) }
-  static var temp : Image { Image("temp", bundle: BundleToken.bundle) }
   // Colors.xcassets
 }
 
