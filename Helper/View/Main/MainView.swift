@@ -31,7 +31,7 @@ struct MainView: View {
                     .blur(radius: (1 - scale) * 20)
                     .tag(1)
                 }
-                Color.cyan
+                HomeView()
                     .tag(2)
             }
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))

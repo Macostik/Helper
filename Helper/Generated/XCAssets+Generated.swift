@@ -7,11 +7,13 @@ internal extension Color {
   // Assets.xcassets
   static var accentColor : Color { Color("AccentColor", bundle: BundleToken.bundle) }
   // Colors.xcassets
-  static var white : Color { Color("white", bundle: BundleToken.bundle) }
+  static var mainBGColor : Color { Color("mainBGColor", bundle: BundleToken.bundle) }
+  static var mainColor : Color { Color("mainColor", bundle: BundleToken.bundle) }
 }
 
 internal extension Image {
   // Assets.xcassets
+  static var homeViewBG : Image { Image("HomeView_BG", bundle: BundleToken.bundle) }
   // Colors.xcassets
 }
 

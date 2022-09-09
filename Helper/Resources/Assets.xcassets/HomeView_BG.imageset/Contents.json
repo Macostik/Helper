@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "HomeView_BG.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
