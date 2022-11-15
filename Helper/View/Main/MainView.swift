@@ -6,13 +6,18 @@
 //
 
 import SwiftUI
+import VisionKit
 
 struct MainView: View {
     @State var currentPage: Int = 2
     @State private var showCameraScannerView = false
     @State private var isDeviceCapacity = false
     @State private var showDeviceNotCapacityAlert = false
-    @State private var scanResults: String = ""
+    @State private var scanResults: String = "" {
+        willSet {
+            print(">> \(newValue)")
+        }
+    }
     init() {
         UIScrollView.appearance().bounces = false
     }
@@ -31,13 +36,17 @@ struct MainView: View {
                     .blur(radius: (1 - scale) * 20)
                     .tag(1)
                 }
-                HomeView()
+                MainView()
                     .tag(2)
             }
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
         }
         .background(Color.black.ignoresSafeArea())
         .ignoresSafeArea()
+        .onAppear {
+            showCameraScannerView = (DataScannerViewController.isSupported &&
+                                DataScannerViewController.isAvailable)
+        }
     }
 }
 

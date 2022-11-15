@@ -1,5 +1,5 @@
 //
-//  HomeView.swift
+//  ContainerView.swift
 //  Helper
 //
 //  Created by Macostik on 06.09.2022.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HomeView: View {
+struct ContainerView: View {
     @State var selectedItem = "house"
     var body: some View {
         VStack {
@@ -48,9 +48,9 @@ struct HomeView: View {
     }
 }
 
-struct HomeView_Previews: PreviewProvider {
+struct ContainerView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        ContainerView()
     }
 }
 

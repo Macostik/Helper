@@ -12,13 +12,6 @@ struct CameraScannerView: View {
     @Binding var scanResult: String
     var body: some View {
         CameraScannerViewController(startScanning: $startScanning, scanResult: $scanResult)
-            .overlay(
-                Image(systemName: "video")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 100, height: 100)
-                    .foregroundColor(Color.pink)
-            )
     }
 }
 
