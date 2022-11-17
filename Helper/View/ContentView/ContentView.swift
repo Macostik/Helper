@@ -10,35 +10,32 @@ import SwiftUI
 struct ContentView: View {
     @State var selectedItem = "house"
     var body: some View {
-        VStack {
-            TabView(selection: $selectedItem, content: {
-                ZStack {
-                    HomeView()
-                }
-                .tag("house")
-                ZStack {
-                    SearchView()
-                }
-                .tag("magnifyingglass")
-                ZStack {
-                    ProfileView()
-                }
-                .tag("person")
-            })
-            .tabViewStyle(.automatic)
-            TabBarView(selectedTab: $selectedItem)
-                .background(
-                    Color.white.opacity(0.1)
-                )
-                .overlay(
-                    RoundedRectangle(cornerRadius: 12)
-                        .stroke(Color.mainColor, lineWidth: 1)
-                )
-                .padding()
+        NavigationStack {
+            VStack {
+                TabView(selection: $selectedItem, content: {
+                    ZStack {
+                        HomeView()
+                    }
+                    .tag("house")
+                    ZStack {
+                        SearchView()
+                    }
+                    .tag("magnifyingglass")
+                    ZStack {
+                        ProfileView()
+                    }
+                    .tag("person")
+                })
+                .tabViewStyle(.page(indexDisplayMode: .never))
+                .padding(.bottom)
+                TabBarView(selectedTab: $selectedItem)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 12)
+                            .stroke(Color.mainColor, lineWidth: 1)
+                    )
+                    .padding(.horizontal)
+            }
         }
-        .padding(.bottom)
-        .background(Color.mainBGColor)
-        .ignoresSafeArea()
     }
 }
 

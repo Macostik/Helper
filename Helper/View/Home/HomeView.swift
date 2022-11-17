@@ -9,7 +9,16 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text("Home View")
+        VStack {
+            Text("The most interested words")
+                .font(.title)
+                .fontWeight(.bold)
+            ScrollView(.vertical, showsIndicators: false) {
+                ForEach(1..<5) { _ in
+                    cardView()
+                }
+            }
+        }
     }
 }
 
@@ -17,4 +26,14 @@ struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
     }
+}
+
+@ViewBuilder func cardView() -> some View {
+    ZStack {
+        
+    }
+    .frame(width: screenSize.width - 20, height: 400)
+    .background(.black.opacity(0.2))
+    .background(.thinMaterial)
+    .cornerRadius(12)
 }
