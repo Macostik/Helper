@@ -14,6 +14,8 @@
 		5647DBA129261A3400484A02 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5647DBA029261A3400484A02 /* ProfileView.swift */; };
 		5647DBA329265A0800484A02 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5647DBA229265A0800484A02 /* String+Ext.swift */; };
 		5647DBAB292661E500484A02 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5647DBAD292661E500484A02 /* Localizable.strings */; };
+		5647DBB1292665C700484A02 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5647DBB0292665C700484A02 /* DetailView.swift */; };
+		5647DBB32926671F00484A02 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5647DBB22926671F00484A02 /* HomeViewModel.swift */; };
 		5651CFC828C9E045008CE037 /* VerticalPageFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5651CFC728C9E045008CE037 /* VerticalPageFeedView.swift */; };
 		56688EDA28C75AA3005ED986 /* CameraScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56688ED928C75AA3005ED986 /* CameraScannerViewController.swift */; };
 		56688EDD28C75E5D005ED986 /* CameraScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56688EDC28C75E5D005ED986 /* CameraScannerView.swift */; };
@@ -66,6 +68,8 @@
 		5647DBA229265A0800484A02 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		5647DBAC292661E500484A02 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5647DBAE292661E900484A02 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5647DBB0292665C700484A02 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		5647DBB22926671F00484A02 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		5651CFC728C9E045008CE037 /* VerticalPageFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalPageFeedView.swift; sourceTree = "<group>"; };
 		56688ED928C75AA3005ED986 /* CameraScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraScannerViewController.swift; sourceTree = "<group>"; };
 		56688EDC28C75E5D005ED986 /* CameraScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraScannerView.swift; sourceTree = "<group>"; };
@@ -154,6 +158,14 @@
 			path = Localization;
 			sourceTree = "<group>";
 		};
+		5647DBAF292665B200484A02 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				5647DBB0292665C700484A02 /* DetailView.swift */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
 		5651CFC628C9DFFC008CE037 /* Component */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				5647DB98292616C200484A02 /* HomeView.swift */,
+				5647DBB22926671F00484A02 /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -270,6 +283,7 @@
 		56B2787B28C6493A00018EEF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5647DBAF292665B200484A02 /* DetailView */,
 				56688EE328C76B89005ED986 /* ContentView */,
 				56688EE028C7618A005ED986 /* Main */,
 				568FB5FC29242DDF001C8E4B /* Home */,
@@ -505,6 +519,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5647DBB32926671F00484A02 /* HomeViewModel.swift in Sources */,
 				5647DB9E292619BA00484A02 /* SearchView.swift in Sources */,
 				56B278E528C6733400018EEF /* Strings+Generated.swift in Sources */,
 				5647DB9B2926183F00484A02 /* TabBarView.swift in Sources */,
@@ -514,6 +529,7 @@
 				56B278E428C6733400018EEF /* Fonts+Generated.swift in Sources */,
 				5626711828C8DF24006D9980 /* UIAppdelegate+Ext.swift in Sources */,
 				56B278C328C65BE500018EEF /* XCAssets+Generated.swift in Sources */,
+				5647DBB1292665C700484A02 /* DetailView.swift in Sources */,
 				56B2781C28C61AAB00018EEF /* ContentView.swift in Sources */,
 				56688EDF28C75F59005ED986 /* MainView.swift in Sources */,
 				5647DB99292616C200484A02 /* HomeView.swift in Sources */,

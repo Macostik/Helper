@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
+    @EnvironmentObject var homeViewModel: HomeViewModel
     var body: some View {
         VStack {
             Text(L10n.Home.title)
@@ -16,6 +17,9 @@ struct HomeView: View {
             ScrollView(.vertical, showsIndicators: false) {
                 ForEach(1..<5) { _ in
                     cardView()
+                        .onTapGesture {
+                            homeViewModel.isPresented = true
+                        }
                 }
             }
         }
