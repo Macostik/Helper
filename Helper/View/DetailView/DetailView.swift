@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct DetailView: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @EnvironmentObject var cardViewModel: CardViewModel
     var body: some View {
         GeometryReader { geometry in
             VStack {
@@ -18,6 +20,19 @@ struct DetailView: View {
             .background {
                 Color.black.opacity(0.2)
             }
+            .offset(y: cardViewModel.cardDetailOffset)
+            .gesture(DragGesture()
+                .onChanged({ value in
+                    cardViewModel.cardDetailOffset = value.translation.height
+                })
+                    .onEnded({ _ in
+                        if abs(cardViewModel.cardDetailOffset) > 200 {
+                            presentationMode.wrappedValue.dismiss()
+                            cardViewModel.isPresented = false
+                            cardViewModel.cardDetailOffset = .zero
+                        }
+                    })
+            )
         }
         .ignoresSafeArea()
     }

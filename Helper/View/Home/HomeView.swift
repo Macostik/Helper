@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    @EnvironmentObject var homeViewModel: HomeViewModel
+    @EnvironmentObject var cardViewModel: CardViewModel
     var body: some View {
         VStack {
             Text(L10n.Home.title)
@@ -18,7 +18,7 @@ struct HomeView: View {
                 ForEach(1..<5) { _ in
                     cardView()
                         .onTapGesture {
-                            homeViewModel.isPresented = true
+                            cardViewModel.isPresented = true
                         }
                 }
             }

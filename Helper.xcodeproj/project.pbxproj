@@ -15,7 +15,7 @@
 		5647DBA329265A0800484A02 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5647DBA229265A0800484A02 /* String+Ext.swift */; };
 		5647DBAB292661E500484A02 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5647DBAD292661E500484A02 /* Localizable.strings */; };
 		5647DBB1292665C700484A02 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5647DBB0292665C700484A02 /* DetailView.swift */; };
-		5647DBB32926671F00484A02 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5647DBB22926671F00484A02 /* HomeViewModel.swift */; };
+		5647DBB32926671F00484A02 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5647DBB22926671F00484A02 /* CardViewModel.swift */; };
 		5651CFC828C9E045008CE037 /* VerticalPageFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5651CFC728C9E045008CE037 /* VerticalPageFeedView.swift */; };
 		56688EDA28C75AA3005ED986 /* CameraScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56688ED928C75AA3005ED986 /* CameraScannerViewController.swift */; };
 		56688EDD28C75E5D005ED986 /* CameraScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56688EDC28C75E5D005ED986 /* CameraScannerView.swift */; };
@@ -69,7 +69,7 @@
 		5647DBAC292661E500484A02 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5647DBAE292661E900484A02 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5647DBB0292665C700484A02 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
-		5647DBB22926671F00484A02 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		5647DBB22926671F00484A02 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
 		5651CFC728C9E045008CE037 /* VerticalPageFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalPageFeedView.swift; sourceTree = "<group>"; };
 		56688ED928C75AA3005ED986 /* CameraScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraScannerViewController.swift; sourceTree = "<group>"; };
 		56688EDC28C75E5D005ED986 /* CameraScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraScannerView.swift; sourceTree = "<group>"; };
@@ -212,7 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				5647DB98292616C200484A02 /* HomeView.swift */,
-				5647DBB22926671F00484A02 /* HomeViewModel.swift */,
+				5647DBB22926671F00484A02 /* CardViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -519,7 +519,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5647DBB32926671F00484A02 /* HomeViewModel.swift in Sources */,
+				5647DBB32926671F00484A02 /* CardViewModel.swift in Sources */,
 				5647DB9E292619BA00484A02 /* SearchView.swift in Sources */,
 				56B278E528C6733400018EEF /* Strings+Generated.swift in Sources */,
 				5647DB9B2926183F00484A02 /* TabBarView.swift in Sources */,

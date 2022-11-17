@@ -9,17 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     @State var selectedItem = "house"
-    @StateObject var homeViewModel = HomeViewModel()
+    @StateObject var cardViewModel = CardViewModel()
     var body: some View {
         NavigationStack {
-            if homeViewModel.isPresented {
+            if cardViewModel.isPresented {
                 DetailView()
-            } else  {
+            } else {
                 VStack {
                     TabView(selection: $selectedItem, content: {
                         ZStack {
                             HomeView()
-                                .environmentObject(homeViewModel)
                         }
                         .tag("house")
                         ZStack {
@@ -42,6 +41,7 @@ struct ContentView: View {
                 }
             }
         }
+        .environmentObject(cardViewModel)
     }
 }
 
