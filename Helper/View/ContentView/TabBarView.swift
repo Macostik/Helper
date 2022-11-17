@@ -1,58 +1,11 @@
 //
-//  ContainerView.swift
+//  TabBarView.swift
 //  Helper
 //
-//  Created by Macostik on 06.09.2022.
+//  Created by Macostik on 17.11.2022.
 //
 
 import SwiftUI
-
-struct ContainerView: View {
-    @State var selectedItem = "house"
-    var body: some View {
-        VStack {
-            TabView(selection: $selectedItem, content: {
-                ZStack {
-                    Color.mainBGColor.ignoresSafeArea()
-                    Text("Home")
-                        .foregroundColor(.white)
-                }
-                .tag("house")
-                ZStack {
-                    Color.mainBGColor.ignoresSafeArea()
-                    Text("Search")
-                        .foregroundColor(.white)
-                }
-                .tag("magnifyingglass")
-                ZStack {
-                    Color.mainBGColor.ignoresSafeArea()
-                    Text("Profile")
-                        .foregroundColor(.white)
-                }
-                .tag("person")
-            })
-            .tabViewStyle(.automatic)
-            TabBarView(selectedTab: $selectedItem)
-            .background(
-                Color.white.opacity(0.1)
-            )
-            .overlay(
-                RoundedRectangle(cornerRadius: 12)
-                    .stroke(Color.mainColor, lineWidth: 1)
-            )
-            .padding()
-        }
-        .padding(.bottom)
-        .background(Color.mainBGColor)
-        .ignoresSafeArea()
-    }
-}
-
-struct ContainerView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContainerView()
-    }
-}
 
 struct TabBarView: View {
     @Binding var selectedTab: String
@@ -114,5 +67,11 @@ struct Triangle: Shape {
         path.addLine(to: CGPoint(x: rect.midX, y: rect.minY))
 
         return path
+    }
+}
+
+struct TabBarView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
 }
