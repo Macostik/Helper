@@ -15,7 +15,7 @@
 # Strings
  strings:
   inputs:
-    - Base.lproj
+    - Localization/en.lproj
   outputs:
     - templateName: structured-swift5
       params:

@@ -10,12 +10,11 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 public enum L10n {
-  /// one
-  public static let one = L10n.tr("Base", "one")
-  /// test string
-  public static let testString = L10n.tr("Base", "testString")
-  /// two
-  public static let two = L10n.tr("Base", "two")
+
+  public enum Home {
+    /// The most interested words
+    public static let title = L10n.tr("Localizable", "home.title")
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

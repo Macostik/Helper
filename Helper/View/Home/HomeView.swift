@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         VStack {
-            Text("The most interested words")
+            Text(L10n.Home.title)
                 .font(.title)
                 .fontWeight(.bold)
             ScrollView(.vertical, showsIndicators: false) {
@@ -29,9 +29,7 @@ struct HomeView_Previews: PreviewProvider {
 }
 
 @ViewBuilder func cardView() -> some View {
-    ZStack {
-        
-    }
+    ZStack {}
     .frame(width: screenSize.width - 20, height: 400)
     .background(.black.opacity(0.2))
     .background(.thinMaterial)
