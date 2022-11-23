@@ -8,40 +8,39 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var selectedItem = "house"
     @StateObject var cardViewModel = CardViewModel()
+    @State var selectedItem = "house"
+    @Namespace var animation
     var body: some View {
         NavigationStack {
-            if cardViewModel.isPresented {
-                DetailView()
-            } else {
-                VStack {
-                    TabView(selection: $selectedItem, content: {
-                        ZStack {
-                            HomeView()
-                        }
-                        .tag("house")
-                        ZStack {
-                            SearchView()
-                        }
-                        .tag("magnifyingglass")
-                        ZStack {
-                            ProfileView()
-                        }
-                        .tag("person")
-                    })
-                    .tabViewStyle(.page(indexDisplayMode: .never))
-                    .padding(.bottom)
-                    TabBarView(selectedTab: $selectedItem)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 12)
-                                .stroke(Color.mainColor, lineWidth: 1)
-                        )
-                        .padding(.horizontal)
-                }
+            VStack {
+                TabView(selection: $selectedItem, content: {
+                    ZStack {
+                        HomeView()
+                            .environmentObject(cardViewModel)
+                    }
+                    .tag("house")
+                    ZStack {
+                        SearchView()
+                    }
+                    .tag("magnifyingglass")
+                    ZStack {
+                        ProfileView()
+                    }
+                    .tag("person")
+                })
+                .tabViewStyle(.page(indexDisplayMode: .never))
+                .edgesIgnoringSafeArea(cardViewModel.selectedCard != nil ? .vertical : .bottom)
+                TabBarView(selectedTab: $selectedItem)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 12)
+                            .stroke(Color.mainColor, lineWidth: 1)
+                    )
+                    .padding(.horizontal)
+                    .offset(y: cardViewModel.selectedCard != nil ? 100 : 0)
             }
         }
-        .environmentObject(cardViewModel)
+        .ignoresSafeArea()
     }
 }
 

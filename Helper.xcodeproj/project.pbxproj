@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5626711828C8DF24006D9980 /* UIAppdelegate+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5626711728C8DF24006D9980 /* UIAppdelegate+Ext.swift */; };
+		56301EEE2927731900B0B87D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56301EED2927731900B0B87D /* Card.swift */; };
 		5647DB99292616C200484A02 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5647DB98292616C200484A02 /* HomeView.swift */; };
 		5647DB9B2926183F00484A02 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5647DB9A2926183F00484A02 /* TabBarView.swift */; };
 		5647DB9E292619BA00484A02 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5647DB9D292619BA00484A02 /* SearchView.swift */; };
@@ -16,10 +17,14 @@
 		5647DBAB292661E500484A02 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5647DBAD292661E500484A02 /* Localizable.strings */; };
 		5647DBB1292665C700484A02 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5647DBB0292665C700484A02 /* DetailView.swift */; };
 		5647DBB32926671F00484A02 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5647DBB22926671F00484A02 /* CardViewModel.swift */; };
+		56503E13292BFFAF00AF3AB1 /* Transition+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56503E12292BFFAF00AF3AB1 /* Transition+Ext.swift */; };
+		56503E15292C000600AF3AB1 /* Environment+Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56503E14292C000600AF3AB1 /* Environment+Value.swift */; };
 		5651CFC828C9E045008CE037 /* VerticalPageFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5651CFC728C9E045008CE037 /* VerticalPageFeedView.swift */; };
 		56688EDA28C75AA3005ED986 /* CameraScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56688ED928C75AA3005ED986 /* CameraScannerViewController.swift */; };
 		56688EDD28C75E5D005ED986 /* CameraScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56688EDC28C75E5D005ED986 /* CameraScannerView.swift */; };
 		56688EDF28C75F59005ED986 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56688EDE28C75F59005ED986 /* MainView.swift */; };
+		569CDD63292EA365002B6A47 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569CDD62292EA365002B6A47 /* VisualEffectView.swift */; };
+		569CDD65292EA57A002B6A47 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569CDD64292EA57A002B6A47 /* View+Ext.swift */; };
 		56B2781A28C61AAB00018EEF /* HelperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B2781928C61AAB00018EEF /* HelperApp.swift */; };
 		56B2781C28C61AAB00018EEF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B2781B28C61AAB00018EEF /* ContentView.swift */; };
 		56B2782128C61AAC00018EEF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56B2782028C61AAC00018EEF /* Preview Assets.xcassets */; };
@@ -61,6 +66,7 @@
 
 /* Begin PBXFileReference section */
 		5626711728C8DF24006D9980 /* UIAppdelegate+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAppdelegate+Ext.swift"; sourceTree = "<group>"; };
+		56301EED2927731900B0B87D /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		5647DB98292616C200484A02 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		5647DB9A2926183F00484A02 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		5647DB9D292619BA00484A02 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
@@ -70,10 +76,14 @@
 		5647DBAE292661E900484A02 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5647DBB0292665C700484A02 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		5647DBB22926671F00484A02 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		56503E12292BFFAF00AF3AB1 /* Transition+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Transition+Ext.swift"; sourceTree = "<group>"; };
+		56503E14292C000600AF3AB1 /* Environment+Value.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Environment+Value.swift"; sourceTree = "<group>"; };
 		5651CFC728C9E045008CE037 /* VerticalPageFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalPageFeedView.swift; sourceTree = "<group>"; };
 		56688ED928C75AA3005ED986 /* CameraScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraScannerViewController.swift; sourceTree = "<group>"; };
 		56688EDC28C75E5D005ED986 /* CameraScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraScannerView.swift; sourceTree = "<group>"; };
 		56688EDE28C75F59005ED986 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		569CDD62292EA365002B6A47 /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
+		569CDD64292EA57A002B6A47 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 		56B2781628C61AAB00018EEF /* Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Helper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56B2781928C61AAB00018EEF /* HelperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperApp.swift; sourceTree = "<group>"; };
 		56B2781B28C61AAB00018EEF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -130,8 +140,27 @@
 			children = (
 				5626711728C8DF24006D9980 /* UIAppdelegate+Ext.swift */,
 				5647DBA229265A0800484A02 /* String+Ext.swift */,
+				56503E12292BFFAF00AF3AB1 /* Transition+Ext.swift */,
+				56503E14292C000600AF3AB1 /* Environment+Value.swift */,
+				569CDD64292EA57A002B6A47 /* View+Ext.swift */,
 			);
 			path = Unit;
+			sourceTree = "<group>";
+		};
+		56301EEB292772EB00B0B87D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5647DBB22926671F00484A02 /* CardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		56301EEC2927730600B0B87D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				56301EED2927731900B0B87D /* Card.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		5647DB9C292619A600484A02 /* Search */ = {
@@ -178,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				56688ED928C75AA3005ED986 /* CameraScannerViewController.swift */,
+				569CDD62292EA365002B6A47 /* VisualEffectView.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -212,7 +242,6 @@
 			isa = PBXGroup;
 			children = (
 				5647DB98292616C200484A02 /* HomeView.swift */,
-				5647DBB22926671F00484A02 /* CardViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -244,6 +273,8 @@
 			children = (
 				56B2781928C61AAB00018EEF /* HelperApp.swift */,
 				56B2787B28C6493A00018EEF /* View */,
+				56301EEB292772EB00B0B87D /* ViewModel */,
+				56301EEC2927730600B0B87D /* Model */,
 				5651CFC628C9DFFC008CE037 /* Component */,
 				56688ED828C75A42005ED986 /* UIKit */,
 				5626711628C8DEE7006D9980 /* Unit */,
@@ -519,7 +550,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				569CDD63292EA365002B6A47 /* VisualEffectView.swift in Sources */,
 				5647DBB32926671F00484A02 /* CardViewModel.swift in Sources */,
+				56301EEE2927731900B0B87D /* Card.swift in Sources */,
 				5647DB9E292619BA00484A02 /* SearchView.swift in Sources */,
 				56B278E528C6733400018EEF /* Strings+Generated.swift in Sources */,
 				5647DB9B2926183F00484A02 /* TabBarView.swift in Sources */,
@@ -529,9 +562,12 @@
 				56B278E428C6733400018EEF /* Fonts+Generated.swift in Sources */,
 				5626711828C8DF24006D9980 /* UIAppdelegate+Ext.swift in Sources */,
 				56B278C328C65BE500018EEF /* XCAssets+Generated.swift in Sources */,
+				56503E15292C000600AF3AB1 /* Environment+Value.swift in Sources */,
 				5647DBB1292665C700484A02 /* DetailView.swift in Sources */,
 				56B2781C28C61AAB00018EEF /* ContentView.swift in Sources */,
 				56688EDF28C75F59005ED986 /* MainView.swift in Sources */,
+				56503E13292BFFAF00AF3AB1 /* Transition+Ext.swift in Sources */,
+				569CDD65292EA57A002B6A47 /* View+Ext.swift in Sources */,
 				5647DB99292616C200484A02 /* HomeView.swift in Sources */,
 				56B2781A28C61AAB00018EEF /* HelperApp.swift in Sources */,
 				5647DBA129261A3400484A02 /* ProfileView.swift in Sources */,
@@ -725,6 +761,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = HYS.Helper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -756,6 +795,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = HYS.Helper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

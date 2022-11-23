@@ -9,37 +9,22 @@ import SwiftUI
 
 struct DetailView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    @EnvironmentObject var cardViewModel: CardViewModel
+    @Environment(\.colorScheme) private var scheme
+    var selectedCard: Card?
+    init(selectedCard: Card?) {
+        self.selectedCard = selectedCard
+    }
     var body: some View {
-        GeometryReader { geometry in
-            VStack {
-                Text("Detail View")
-            }
-            .frame(width: geometry.size.width,
-                   height: geometry.size.height)
-            .background {
-                Color.black.opacity(0.2)
-            }
-            .offset(y: cardViewModel.cardDetailOffset)
-            .gesture(DragGesture()
-                .onChanged({ value in
-                    cardViewModel.cardDetailOffset = value.translation.height
-                })
-                    .onEnded({ _ in
-                        if abs(cardViewModel.cardDetailOffset) > 200 {
-                            presentationMode.wrappedValue.dismiss()
-                            cardViewModel.isPresented = false
-                            cardViewModel.cardDetailOffset = .zero
-                        }
-                    })
-            )
+        ZStack {
+            Color.clear
+                .blurEffect(for: scheme)
+                .cornerRadius(12)
         }
-        .ignoresSafeArea()
     }
 }
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView()
+        DetailView(selectedCard: nil)
     }
 }
