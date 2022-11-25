@@ -15,6 +15,15 @@ public enum L10n {
     /// The most interested words
     public static let title = L10n.tr("Localizable", "home.title")
   }
+
+  public enum Tab {
+    /// house
+    public static let house = L10n.tr("Localizable", "tab.house")
+    /// magnifyingglass
+    public static let magnifyingglass = L10n.tr("Localizable", "tab.magnifyingglass")
+    /// person
+    public static let person = L10n.tr("Localizable", "tab.person")
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

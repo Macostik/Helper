@@ -9,21 +9,25 @@ import SwiftUI
 
 struct TabBarView: View {
     @Binding var selectedTab: String
+    @Binding var isHidden: Bool
     @Namespace private var animation
     var body: some View {
-        HStack {
-            TabBarItem(animation: animation,
-                    image: "house",
-                    selectedTab: $selectedTab)
-            TabBarItem(animation: animation,
-                    image: "magnifyingglass",
-                    selectedTab: $selectedTab)
-            TabBarItem(animation: animation,
-                    image: "person",
-                    selectedTab: $selectedTab)
+        if !isHidden {
+            HStack {
+                ForEach(tabItems) { tab in
+                    TabBarItem(animation: animation,
+                               image: tab.name,
+                               selectedTab: $selectedTab)
+                }
+            }
+            .padding()
+            .frame(maxWidth: .infinity)
+            .overlay(
+                RoundedRectangle(cornerRadius: 12)
+                    .stroke(Color.mainColor, lineWidth: 1)
+            )
+            .padding(.horizontal)
         }
-        .padding()
-        .frame(maxWidth: .infinity)
     }
 }
 

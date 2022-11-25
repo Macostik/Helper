@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    @EnvironmentObject var cardViewModel: CardViewModel
+    @StateObject var cardViewModel = CardViewModel()
     @Namespace var animation
     var body: some View {
         ZStack {
@@ -18,6 +18,7 @@ struct HomeView: View {
                     .onTapGesture {
                         withAnimation(.easeInOut(duration: 1.0)) {
                             cardViewModel.selectedCard = nil
+//                            _ = self.environment(\.isFullScreenPresented, false)
                         }
                     }
                     .matchedGeometryEffect(id: selectedCard.id, in: animation)
@@ -30,6 +31,7 @@ struct HomeView: View {
                             .onTapGesture {
                                 withAnimation(.easeInOut(duration: 1.0)) {
                                     cardViewModel.selectedCard = card
+//                                    _ = self.environment(\.isFullScreenPresented, true)
                                 }
                             }
                             .matchedGeometryEffect(id: card.id, in: animation)
@@ -39,6 +41,8 @@ struct HomeView: View {
                 }
             }
         }
+        .isFullScreenPresented(cardViewModel.selectedCard != nil)
+//        .environment(\.isFullScreenPresenting, cardViewModel.selectedCard != nil)
     }
     func tapThumbnail(_ card: Card) {
         withAnimation(.hero) { cardViewModel.selectedCard = card }
@@ -69,12 +73,8 @@ struct CardView: View {
                 .scaledToFill()
         }
         .aspectRatio(contentMode: .fill)
-        .frame(width: screenSize.width - 7,
-               height: 400)
-        .background(.black.opacity(0.2))
         .cornerRadius(12)
-        .background(.thinMaterial)
-        .matchedGeometryEffect(id: card?.id, in: animation )
+
     }
 }
 

@@ -12,4 +12,7 @@ extension View {
     func blurEffect(for scheme: ColorScheme) -> some View {
         VisualEffectView(uiVisualEffect: UIBlurEffect(style: scheme == .dark ? .dark : .light))
     }
+    func isFullScreenPresented(_ flag: Bool) -> some View {
+        environment(\.isFullScreenPresented, flag)
+      }
 }

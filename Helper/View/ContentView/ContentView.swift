@@ -8,37 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var cardViewModel = CardViewModel()
-    @State var selectedItem = "house"
+    @Environment(\.isFullScreenPresented) private var isFullScreenPresenting
+    @StateObject var contentViewModel = ContentViewModel()
     @Namespace var animation
     var body: some View {
         NavigationStack {
             VStack {
-                TabView(selection: $selectedItem, content: {
+                TabView(selection: $contentViewModel.selectedItem,
+                        content: {
                     ZStack {
                         HomeView()
-                            .environmentObject(cardViewModel)
                     }
-                    .tag("house")
+                    .tag(tabItems[0].name)
                     ZStack {
                         SearchView()
                     }
-                    .tag("magnifyingglass")
+                    .tag(tabItems[1].name)
                     ZStack {
                         ProfileView()
                     }
-                    .tag("person")
+                    .tag(tabItems[2].name)
                 })
                 .tabViewStyle(.page(indexDisplayMode: .never))
-                .edgesIgnoringSafeArea(cardViewModel.selectedCard != nil ? .vertical : .bottom)
-                TabBarView(selectedTab: $selectedItem)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 12)
-                            .stroke(Color.mainColor, lineWidth: 1)
-                    )
-                    .padding(.horizontal)
-                    .offset(y: cardViewModel.selectedCard != nil ? 100 : 0)
+                .edgesIgnoringSafeArea(isFullScreenPresenting ? .vertical : .bottom)
             }
+            TabBarView(selectedTab: $contentViewModel.selectedItem,
+                       isHidden: $contentViewModel.hideTabBar)
         }
         .ignoresSafeArea()
     }
