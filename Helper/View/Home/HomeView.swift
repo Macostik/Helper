@@ -10,6 +10,10 @@ import SwiftUI
 struct HomeView: View {
     @StateObject var cardViewModel = CardViewModel()
     @Namespace var animation
+    private var isFullPresented: ((Bool) -> Void)
+    init(isFullPresented: @escaping (Bool) -> Void) {
+        self.isFullPresented = isFullPresented
+    }
     var body: some View {
         ZStack {
             if let selectedCard = cardViewModel.selectedCard {
@@ -18,7 +22,7 @@ struct HomeView: View {
                     .onTapGesture {
                         withAnimation(.easeInOut(duration: 1.0)) {
                             cardViewModel.selectedCard = nil
-//                            _ = self.environment(\.isFullScreenPresented, false)
+                            isFullPresented(false)
                         }
                     }
                     .matchedGeometryEffect(id: selectedCard.id, in: animation)
@@ -31,7 +35,7 @@ struct HomeView: View {
                             .onTapGesture {
                                 withAnimation(.easeInOut(duration: 1.0)) {
                                     cardViewModel.selectedCard = card
-//                                    _ = self.environment(\.isFullScreenPresented, true)
+                                    isFullPresented(true)
                                 }
                             }
                             .matchedGeometryEffect(id: card.id, in: animation)
@@ -41,8 +45,6 @@ struct HomeView: View {
                 }
             }
         }
-        .isFullScreenPresented(cardViewModel.selectedCard != nil)
-//        .environment(\.isFullScreenPresenting, cardViewModel.selectedCard != nil)
     }
     func tapThumbnail(_ card: Card) {
         withAnimation(.hero) { cardViewModel.selectedCard = card }
@@ -51,7 +53,7 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView { _ in }
     }
 }
 

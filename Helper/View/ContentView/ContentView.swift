@@ -8,16 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
-    @Environment(\.isFullScreenPresented) private var isFullScreenPresenting
     @StateObject var contentViewModel = ContentViewModel()
     @Namespace var animation
+    @State private var isFullScreenPresented = false
     var body: some View {
         NavigationStack {
             VStack {
                 TabView(selection: $contentViewModel.selectedItem,
                         content: {
                     ZStack {
-                        HomeView()
+                        HomeView {
+                            isFullScreenPresented = $0
+                        }
                     }
                     .tag(tabItems[0].name)
                     ZStack {
@@ -30,10 +32,12 @@ struct ContentView: View {
                     .tag(tabItems[2].name)
                 })
                 .tabViewStyle(.page(indexDisplayMode: .never))
-                .edgesIgnoringSafeArea(isFullScreenPresenting ? .vertical : .bottom)
+                .edgesIgnoringSafeArea(isFullScreenPresented ? .vertical : .bottom)
             }
-            TabBarView(selectedTab: $contentViewModel.selectedItem,
-                       isHidden: $contentViewModel.hideTabBar)
+            if isFullScreenPresented == false {
+                TabBarView(selectedTab: $contentViewModel.selectedItem,
+                           isHidden: $contentViewModel.hideTabBar)
+            }
         }
         .ignoresSafeArea()
     }
