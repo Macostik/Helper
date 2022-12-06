@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5626711828C8DF24006D9980 /* UIAppdelegate+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5626711728C8DF24006D9980 /* UIAppdelegate+Ext.swift */; };
 		56301EEE2927731900B0B87D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56301EED2927731900B0B87D /* Card.swift */; };
 		5635EB1B2930C18E00F6CEE1 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5635EB1A2930C18E00F6CEE1 /* ContentViewModel.swift */; };
 		5635EB1D2930F43D00F6CEE1 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5635EB1C2930F43D00F6CEE1 /* Tab.swift */; };
@@ -27,6 +26,8 @@
 		56688EDF28C75F59005ED986 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56688EDE28C75F59005ED986 /* MainView.swift */; };
 		569CDD63292EA365002B6A47 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569CDD62292EA365002B6A47 /* VisualEffectView.swift */; };
 		569CDD65292EA57A002B6A47 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569CDD64292EA57A002B6A47 /* View+Ext.swift */; };
+		56A6D753293524B900C4A913 /* View+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A6D752293524B900C4A913 /* View+Style.swift */; };
+		56A6D7562935251800C4A913 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A6D7552935251800C4A913 /* CardView.swift */; };
 		56B2781A28C61AAB00018EEF /* HelperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B2781928C61AAB00018EEF /* HelperApp.swift */; };
 		56B2781C28C61AAB00018EEF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B2781B28C61AAB00018EEF /* ContentView.swift */; };
 		56B2782128C61AAC00018EEF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56B2782028C61AAC00018EEF /* Preview Assets.xcassets */; };
@@ -67,7 +68,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5626711728C8DF24006D9980 /* UIAppdelegate+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAppdelegate+Ext.swift"; sourceTree = "<group>"; };
 		56301EED2927731900B0B87D /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		5635EB1A2930C18E00F6CEE1 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		5635EB1C2930F43D00F6CEE1 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
@@ -88,6 +88,8 @@
 		56688EDE28C75F59005ED986 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		569CDD62292EA365002B6A47 /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
 		569CDD64292EA57A002B6A47 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
+		56A6D752293524B900C4A913 /* View+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Style.swift"; sourceTree = "<group>"; };
+		56A6D7552935251800C4A913 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		56B2781628C61AAB00018EEF /* Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Helper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56B2781928C61AAB00018EEF /* HelperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperApp.swift; sourceTree = "<group>"; };
 		56B2781B28C61AAB00018EEF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -142,11 +144,11 @@
 		5626711628C8DEE7006D9980 /* Unit */ = {
 			isa = PBXGroup;
 			children = (
-				5626711728C8DF24006D9980 /* UIAppdelegate+Ext.swift */,
 				5647DBA229265A0800484A02 /* String+Ext.swift */,
 				56503E12292BFFAF00AF3AB1 /* Transition+Ext.swift */,
 				56503E14292C000600AF3AB1 /* Environment+Value.swift */,
 				569CDD64292EA57A002B6A47 /* View+Ext.swift */,
+				56A6D752293524B900C4A913 /* View+Style.swift */,
 			);
 			path = Unit;
 			sourceTree = "<group>";
@@ -247,9 +249,18 @@
 		568FB5FC29242DDF001C8E4B /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				56A6D7542935250500C4A913 /* CardView */,
 				5647DB98292616C200484A02 /* HomeView.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		56A6D7542935250500C4A913 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				56A6D7552935251800C4A913 /* CardView.swift */,
+			);
+			path = CardView;
 			sourceTree = "<group>";
 		};
 		56B2780D28C61AAB00018EEF = {
@@ -568,7 +579,6 @@
 				56688EDD28C75E5D005ED986 /* CameraScannerView.swift in Sources */,
 				5651CFC828C9E045008CE037 /* VerticalPageFeedView.swift in Sources */,
 				56B278E428C6733400018EEF /* Fonts+Generated.swift in Sources */,
-				5626711828C8DF24006D9980 /* UIAppdelegate+Ext.swift in Sources */,
 				56B278C328C65BE500018EEF /* XCAssets+Generated.swift in Sources */,
 				56503E15292C000600AF3AB1 /* Environment+Value.swift in Sources */,
 				5647DBB1292665C700484A02 /* DetailView.swift in Sources */,
@@ -576,8 +586,10 @@
 				56688EDF28C75F59005ED986 /* MainView.swift in Sources */,
 				56503E13292BFFAF00AF3AB1 /* Transition+Ext.swift in Sources */,
 				569CDD65292EA57A002B6A47 /* View+Ext.swift in Sources */,
+				56A6D7562935251800C4A913 /* CardView.swift in Sources */,
 				5647DB99292616C200484A02 /* HomeView.swift in Sources */,
 				56B2781A28C61AAB00018EEF /* HelperApp.swift in Sources */,
+				56A6D753293524B900C4A913 /* View+Style.swift in Sources */,
 				5647DBA129261A3400484A02 /* ProfileView.swift in Sources */,
 				56688EDA28C75AA3005ED986 /* CameraScannerViewController.swift in Sources */,
 			);

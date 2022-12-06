@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Card: Identifiable {
+struct Card: Identifiable, Equatable, Hashable {
     var id: String
     var name: String
     var tagLine: String

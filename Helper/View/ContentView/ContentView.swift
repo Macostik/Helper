@@ -12,34 +12,37 @@ struct ContentView: View {
     @Namespace var animation
     @State private var isFullScreenPresented = false
     var body: some View {
-        NavigationStack {
-            VStack {
-                TabView(selection: $contentViewModel.selectedItem,
-                        content: {
-                    ZStack {
-                        HomeView {
-                            isFullScreenPresented = $0
+        GeometryReader { proxy in
+            NavigationStack {
+                VStack {
+                    TabView(selection: $contentViewModel.selectedItem,
+                            content: {
+                        ZStack {
+                            HomeView {
+                                isFullScreenPresented = $0
+                            }
                         }
-                    }
-                    .tag(tabItems[0].name)
-                    ZStack {
-                        SearchView()
-                    }
-                    .tag(tabItems[1].name)
-                    ZStack {
-                        ProfileView()
-                    }
-                    .tag(tabItems[2].name)
-                })
-                .tabViewStyle(.page(indexDisplayMode: .never))
-                .edgesIgnoringSafeArea(isFullScreenPresented ? .vertical : .bottom)
+                        .tag(tabItems[0].name)
+                        ZStack {
+                            SearchView()
+                        }
+                        .tag(tabItems[1].name)
+                        ZStack {
+                            ProfileView()
+                        }
+                        .tag(tabItems[2].name)
+                    })
+                    .tabViewStyle(.page(indexDisplayMode: .never))
+                }
+                if isFullScreenPresented == false {
+                    TabBarView(selectedTab: $contentViewModel.selectedItem,
+                               isHidden: $contentViewModel.hideTabBar)
+                }
             }
-            if isFullScreenPresented == false {
-                TabBarView(selectedTab: $contentViewModel.selectedItem,
-                           isHidden: $contentViewModel.hideTabBar)
-            }
+            .ignoresSafeArea()
+            .environment(\.screenSize, proxy.size)
+            .environment(\.safeAreaInsets, proxy.safeAreaInsets)
         }
-        .ignoresSafeArea()
     }
 }
 
