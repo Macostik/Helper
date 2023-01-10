@@ -24,6 +24,7 @@
 		56688EDA28C75AA3005ED986 /* CameraScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56688ED928C75AA3005ED986 /* CameraScannerViewController.swift */; };
 		56688EDD28C75E5D005ED986 /* CameraScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56688EDC28C75E5D005ED986 /* CameraScannerView.swift */; };
 		56688EDF28C75F59005ED986 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56688EDE28C75F59005ED986 /* MainView.swift */; };
+		5680A498296D84690084F993 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5680A497296D84690084F993 /* GoogleService-Info.plist */; };
 		569CDD63292EA365002B6A47 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569CDD62292EA365002B6A47 /* VisualEffectView.swift */; };
 		569CDD65292EA57A002B6A47 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569CDD64292EA57A002B6A47 /* View+Ext.swift */; };
 		56A6D753293524B900C4A913 /* View+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A6D752293524B900C4A913 /* View+Style.swift */; };
@@ -86,6 +87,7 @@
 		56688ED928C75AA3005ED986 /* CameraScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraScannerViewController.swift; sourceTree = "<group>"; };
 		56688EDC28C75E5D005ED986 /* CameraScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraScannerView.swift; sourceTree = "<group>"; };
 		56688EDE28C75F59005ED986 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		5680A497296D84690084F993 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		569CDD62292EA365002B6A47 /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
 		569CDD64292EA57A002B6A47 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 		56A6D752293524B900C4A913 /* View+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Style.swift"; sourceTree = "<group>"; };
@@ -363,6 +365,7 @@
 		56B278BB28C6595800018EEF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5680A497296D84690084F993 /* GoogleService-Info.plist */,
 				5647DBA8292661B300484A02 /* Localization */,
 				56B2789D28C64D8000018EEF /* Info.plist */,
 				56B278D728C6727300018EEF /* Poppins */,
@@ -492,6 +495,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56B2782128C61AAC00018EEF /* Preview Assets.xcassets in Resources */,
+				5680A498296D84690084F993 /* GoogleService-Info.plist in Resources */,
 				56B2788028C649B500018EEF /* swiftlint.yml in Resources */,
 				56B2788928C64B1200018EEF /* swiftui-xcassets-template.stencil in Resources */,
 				56B278E028C6728F00018EEF /* Poppins-Regular.ttf in Resources */,

@@ -23,15 +23,12 @@ struct CardModifier: AnimatableModifier {
     }
     func body(content: Content) -> some View {
         return GeometryReader { _ in
-            VStack {
-                Spacer()
-                HStack {
-                    Spacer()
-                    Text("\(card?.id ?? "")")
-                        .foregroundColor(.white)
-                    Spacer()
+            VStack(alignment: .center) {
+                HStack(alignment: .center) {
+                    if let name = card?.name {
+                       Text(name)
+                    }
                 }
-                Spacer()
             }
         }
     }

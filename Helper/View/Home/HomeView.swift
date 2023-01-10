@@ -21,22 +21,24 @@ struct HomeView: View {
         ZStack {
             ScrollView(.vertical, showsIndicators: false) {
                 ForEach(cardViewModel.cardList) { card in
-                    CardView(card: card,
-                             progress: number)
-                    .background(Color.gray.opacity(0.3))
-                    .tag(card.id)
-                    .cornerRadius(12)
-                    .onTapGesture {
+                    Button {
                         withAnimation(.easeInOut(duration: 3.0)) {
                             cardViewModel.selectedCard = card
                             isFullPresented(true)
                             number = 0
                         }
+                    } label: {
+                        CardView(card: card,
+                                 progress: number)
+                        .background(Color.gray.opacity(0.3))
+                        .tag(card.id)
+                        .cornerRadius(12)
+                        .matchedGeometryEffect(id: card.id, in: animation)
+                        .frame(height: 400)
+                        .padding(.horizontal, 24)
                     }
-                    .matchedGeometryEffect(id: card.id, in: animation)
-                    .frame(height: 400)
-                    .padding(.horizontal, 24)
                 }
+                .buttonStyle(ScaleButtonStyle())
             }
             .overlay {
                 if let selectedCard = cardViewModel.selectedCard {
